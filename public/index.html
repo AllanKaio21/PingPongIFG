@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ping Pong!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Tênis de Mesa<br/><span class="yellow" style="font-size: 0.4em;">Controle de Jogos</span></h1>
+    <table id="tableQueue" class="container">
+    	<thead>
+    		<tr>
+          <th><h1>Fila</h1></th>
+    			<th><h1>Jogador</h1></th>
+    			<th><h1>Vitórias</h1></th>
+    			<th><h1>Derrotas</h1></th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+          <td id="pos">#1</td>
+    		  <td id="player">Jogador 3</td>
+    			<td id="vic">0</td>
+    			<td id="def">0</td>
+    		</tr>
+    	</tbody>
+    </table>
+  
+    <h1><span class="yellow" style="font-size: 0.4em;">Partida</span></h1> 
+    <table class="container">
+    	<thead>
+    		<tr>
+    			<th><h1>Player 1</h1></th>
+    			<th><h1>Player 2</h1></th>
+    			<th><h1>Pontuação</h1></th>
+          <th><h1>Finalizar</h1></th>
+    		</tr>
+    	</thead>
+    	<tbody id="tableGame">
+    		<tr>
+    			<td id="plgame" class="btn-table">Jogador 1</td>
+    			<td id="pl2game" class="btn-table">Jogador 2</td>
+    			<td id="pont"># x #</td>
+    			<td id="btnFN" class="btn-tableFN">Finalizar</td>
+    		</tr>
+    	</tbody>
+    </table>
+    <div class="form-insert" id="form-insert">
+      <br/>
+      <input class="input-insert" type="text" id="input" placeholder="Jogador" required>
+      <br/>
+      <input class="btn-insert" type="button" id="btn" value="Adicionar">
+      <br/><br/>
+      <form>
+        <input class="btn-insert" type="submit" id="btn-reset" value="Resetar" title="Apagar Dados!">
+      </form>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
